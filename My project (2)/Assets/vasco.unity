@@ -244,7 +244,7 @@ GameObject:
   - component: {fileID: 741525833}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -382,7 +382,7 @@ Transform:
   m_GameObject: {fileID: 741525832}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.88, y: -2, z: 0}
+  m_LocalPosition: {x: 10.07, y: -3.92, z: 0}
   m_LocalScale: {x: 18.565258, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -400,9 +400,10 @@ GameObject:
   - component: {fileID: 1464643504}
   - component: {fileID: 1464643503}
   - component: {fileID: 1464643502}
+  - component: {fileID: 1464643506}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -530,12 +531,28 @@ Transform:
   m_GameObject: {fileID: 1464643501}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.71, y: 0.09, z: 0}
+  m_LocalPosition: {x: -0.05, y: -2.98, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1599802900}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1464643506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464643501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06ebf943c71b96745b53bb3d4a162d10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 10
+  focaPulo: 10
+  noChao: 0
 --- !u!1 &1599802897
 GameObject:
   m_ObjectHideFlags: 0
@@ -622,11 +639,11 @@ Transform:
   m_GameObject: {fileID: 1599802897}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1464643505}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1886099450
 GameObject:
@@ -642,7 +659,7 @@ GameObject:
   - component: {fileID: 1886099455}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -753,7 +770,7 @@ Transform:
   m_GameObject: {fileID: 1886099450}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.0212, y: -3.0046606, z: 0}
+  m_LocalPosition: {x: -0.08, y: -4.61, z: 0}
   m_LocalScale: {x: 20.418898, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -790,7 +807,6 @@ Rigidbody2D:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 1599802900}
   - {fileID: 741369734}
   - {fileID: 1886099454}
   - {fileID: 741525836}
